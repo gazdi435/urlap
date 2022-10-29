@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="foTomb">
+            <div id="yes">
+                <label for="nev">Megrendelő neve:</label>
+                <input type="text" name="nev" id="nev" onfocus="fokusznal(this.id)" onblur="noFokusznal(this.id)">
+            </div>
+
+            <div>
+                <label for="cim">Megrendelő címe:</label>
+                <input type="text" name="cim" id="cim" onfocus="fokusznal(this.id)" onblur="noFokusznal(this.id)">
+            </div>
+
+            <div>
+                <label for="nev">Megrendelő telefonszáma:</label>
+                <input type="tel" name="telefon" id="telefon" value="+36" onfocus="fokusznal(this.id)" onblur="noFokusznal(this.id)">
+            </div>
+
+            <button onclick="elkuld()">Elküld</button>
+
+    </div>
+
+
+    <div id="labTomb">
+        <br>
+        <h1>Visszaigazolás!</h1>
+        <p>Név: <span id="nevMutato">?</span></p>
+        <p>Cím: <span id="cimMutato">?</span></p>
+        <p>Telefon: <span id="telefonMutato">?</span></p>
+
+    </div>
+
+    <form action="main.html">
+        <button onclick="elkuld()">yes</button>
+    </form>
+
+</body>
+</html>
